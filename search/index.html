@@ -3,25 +3,33 @@
     <head>
         <title>Search</title>
         <style>
-          #div1 {
-            text-align: left;
-          }
-          #div2 {
-            text-align: right;
-          }
-
+        #topsearch {
+          display: flex;
+          justify-content: space-between;
+        }
+        #main {
+          position:absolute;
+          width:780px;
+          height:650px;
+          left:50%;
+          top:50%;
+          margin-left:-350px;
+          margin-top:-325px;
+        }
         </style>
     </head>
     <body>
-      <div id = "div1">
+      <h1 id=topsearch>
         <a href="https://images.google.com">Google Image Search</a>
-      </div>
-      <div id =  "div2">
         <a href="https://www.google.ca/advanced_search">Google Advanced Search</a>
-      </div>
-      <form action="https://google.com/search" style="margin: auto; width: 220px;">
+      </h1>
+      <div id=main>
+      <!--<img src="‪googlelogo.png" alt="google" style="margin: auto; width: 220px;"/>-->
+      <h1 style="margin: auto; width: 220px; font-size : 80px; font-family : 	Lucida Handwriting;">Google</h1>
+      <form action="https://google.com/search" style="margin: auto; width:150px;">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
       </form>
+    </div>
     </body>
 </html>
