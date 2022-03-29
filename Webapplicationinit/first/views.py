@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("hello world")# Create your views here.
+    return  render(request, "first/index.html")
 
-def user(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}!")
+def greet(request, name):
+    return render(request, "first/greet.html", {
+        "name" : name.capitalize()
+    })
