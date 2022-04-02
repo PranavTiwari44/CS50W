@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+        #back {
+            width: 200px;
+            color: black;
+        }
+        #name {
+          margin-left: 10px;
+          color: orangered;
+        }
+        hr.solid {
+          border-top: 3px solid #bbb;
+        }
+        </style>
+    </head>
+    <body>
+      <h3>
+        <a href="index.html" id=back>Google</a>
+      </h3>
+      <div>
+      <h2 id=name>
+        Advanced search
+      </h2>
+      </div>
+      <hr class="solid">
+      <div>
+        <form   method= "get" action="https://google.com/search" style="margin-top:100px;">
+          <div style ="display: flex; ">
+            <h4>all these words:   </h4>
+            <input type="text" id=textarea name="q" style="width: 400px; height:20px; postions:absolute; margin-left:300px; "/>
+          </div>
+          <div>
+            <p style="line-height:3.5em;"></p>
+          </div>
+          <div style="display: flex;">
+            <h4>this exact word or phrase: </h4>
+            <input type="text" id=textarea name="q" style="width: 400px; height:20px; postions:absolute; margin-left:229px; "/>
+          </div>
+          <div>
+            <p style="line-height:3.5em;"></p>
+          </div>
+          <div style="display: flex; justify-content: auto;">
+            <h4>any of these words: </h4>
+              <input type="text" id=textarea name="q" style="width: 400px; height:20px; postions:absolute; margin-left:275px; "/>
+          </div>
+          <div>
+            <p style="line-height:3.5em;"></p>
+          </div>
+          <div style="display: flex; justify-content: auto;">
+            <h4>none of these words: </h4>
+              <input type="text" id=textarea name="q" style="width: 400px; height:20px; postions:absolute; margin-left:270px; "/>
+          </div>
+        </form>
+      </div>
+    </body>
+</html>
