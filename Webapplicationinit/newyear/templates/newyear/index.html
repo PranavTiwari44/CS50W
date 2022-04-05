@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Is is New Year's?</title>
+   <style>
+     #cont > div{
+       font-size: 100px;
+       background-color: springgreen;
+       margin: 75px;
+       padding: 75px;
+     }
+   </style>
+   <style>
+     #cont {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+   }
+   </style>
+ </head>
+ <body>
+   <div id=cont>
+     <div>
+     {% if newyear %}
+      <h1>YES</h1>
+      {% else %}
+      <h1>NO</h1>
+      {% endif %}
+      </div>
+   </div>
+ </body>
+</html>
