@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tasks!</title>
+    <link href="{% static 'tasks/styles.css' %}" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+				<ul>
+            {% for i in tasks %}
+              <li> {{i}}</li>
+            {% endfor %}
+        </ul>
+		</div>
+	</body>
+</html>
