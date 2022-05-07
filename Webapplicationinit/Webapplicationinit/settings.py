@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'first',
+    'smartFridge',
     'newyear',
     'tasks',
     'django.contrib.admin',
